@@ -58,7 +58,7 @@ Students who take this class will:
 This course will be taught using [OpenFrameworks](http://openframeworks.cc) C++ creative coding toolkit. You can run OF in your IDE of choice, depending on your OS. Download the correct OF version and follow the setup guide in the [OF download page](http://openframeworks.cc/download/) to get up and running.
 
 #####Running the code in this repo
-The code in this repository is compatible with OF version 0.8.4, the latest stable release at the start date of this class. To run the code in this repo, place it inside the Apps folder of the OF structure.
+The code in this repository is compatible with OF version 0.8.4, the latest stable release at the start date of this class. To run the code in this repo, place it inside the root folder of OpenFrameworks.
 
 #####Git + GitHub
 We will use [Git](http://git-scm.com/) for source control and [GitHub](https://github.com/) as the online platform to store most of the class materials, especially example code. Github will also be the platform used to deliver homework for this class. [Install Git](https://help.github.com/articles/set-up-git/) in your machine and sign up for Github before the start of class.
