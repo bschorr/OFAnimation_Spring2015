@@ -35,21 +35,21 @@ Students who take this class will:
 
 | WEEK | DATE  | TOPIC                                     |
 |:----:|:-----:|:------------------------------------------|
-|  01  | 01/27 | TBD                |
-|  02  | 02/03 | TBD       |
-|  03  | 02/10 | TBD             |         
-|  04  | 02/17 | TBD           |
-|  05  | 02/24 | TBD                      |
-|  06  | 03/03 | TBD |
-|  07  | 03/10 | TBD                      |
+|  01  | 01/27 | CANCELLED / Juno Storm                |
+|  02  | 02/03 | Setup / OOP / Interpolation       |
+|  03  | 02/10 | Shapes / Randomness / Noise             |         
+|  04  | 02/17 | Trigonometry / Oscillation           |
+|  05  | 02/24 | Vectors / Forces                      |
+|  06  | 03/03 | Particles / Particle Systems |
+|  07  | 03/10 | Box2D / C++ Primer                      |
 |  08  | 03/17 | **MIDTERM PRESENTATIONS**                 |
 |  09  | 03/24 | NO CLASS / Spring Break                   |
-|  10  | 03/31 | TBD           |
-|  11  | 04/07 | TBD                      |
+|  10  | 03/31 | Autonomous Elements I           |
+|  11  | 04/07 | Autonomous Elements II                      |
 |  12  | 04/14 | NO CLASS / Bernardo at FITC               |
-|  13  | 04/21 | TBD                    |
-|  14  | 04/28 | TBD                             |
-|  15  | 05/05 | TBD                             |
+|  13  | 04/21 | Springs / Verlet Integration                    |
+|  14  | 04/28 | OpenGL Primer                             |
+|  15  | 05/05 | Final Workshop                             |
 |  16  | 05/12 | **FINAL PRESENTATIONS**                   |
 
 ##Software
