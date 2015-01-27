@@ -8,12 +8,12 @@
 
 4. Navigate terminal to the apps folder inside the OF folder structure. Do that by typing "cd" and dragging the folder to the terminal window:
 
-	cd [path/to/your/OF/folder - ex.: Users/bschorr/Personal/of_v0.8.4_osx_release/apps ]
+		cd [path/to/your/OF/folder - ex.: Users/bschorr/Personal/of_v0.8.4_osx_release/apps ]
 
 
 5. Clone your repo INSIDE the apps folder:
 
-	git clone [YOUR REPO - ex.: https://github.com/bschorr/BernardoSchorr_OFanimation2015]
+		git clone [YOUR REPO - ex.: https://github.com/bschorr/BernardoSchorr_OFanimation2015]
 
 6. Add a [```.gitignore```](https://gist.github.com/ofZach/3707086) file to your repo. This will tell git to avoid certain files, such as compiled object code (.app / .exes) and system files. This helps to keep your repos light. Zach Lieberman wrote a very useful .gitignore file for OF. Get it [here](https://gist.github.com/ofZach/3707086). If you're not comfortable with this, we'll go through it in class.
 
