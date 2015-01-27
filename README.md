@@ -47,8 +47,8 @@ Students who take this class will:
 |  10  | 03/31 | Autonomous Elements I           |
 |  11  | 04/07 | Autonomous Elements II                      |
 |  12  | 04/14 | NO CLASS / Bernardo at FITC               |
-|  13  | 04/21 | Springs / Verlet Integration                    |
-|  14  | 04/28 | OpenGL Primer                             |
+|  13  | 04/21 | TBD (Springs? / Verlet? / Fractals?)                    |
+|  14  | 04/28 | TBD (Shaders? FBO? VBO?)                             |
 |  15  | 05/05 | Final Workshop                             |
 |  16  | 05/12 | **FINAL PRESENTATIONS**                   |
 
