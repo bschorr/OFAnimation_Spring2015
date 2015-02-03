@@ -52,6 +52,8 @@ void customCircle::setPenner(ofVec2f _newPos, int _totalIter){
     finalPos = _newPos;
 }
 
+//this code is using Penner's BACK functions for easing. Check out the other ones he made!
+
 float customCircle::easeIn (float t,float b , float c, float d) {
     float s = 1.70158f;
     float postFix = t/=d;
