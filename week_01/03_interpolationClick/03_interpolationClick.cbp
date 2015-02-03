@@ -67,10 +67,7 @@
 			<Add directory="..\..\..\libs\openFrameworks\video" />
 			<Add directory="..\..\..\libs\poco\include" />
 			<Add directory="..\..\..\libs\tess2\include" />
-			<Add directory="..\..\..\libs\openssl\include" />
 			<Add directory="..\..\..\libs\cairo\include\cairo" />
-			<Add directory="../../../addons/libs" />
-			<Add directory="../../../addons/src" />
 			<Add directory="src" />
 		</Compiler>
 		<Linker>
@@ -84,7 +81,7 @@
 			<Add library="..\..\..\libs\glfw\lib\win_cb\libglfw3.a" />
 			<Add library="..\..\..\libs\videoInput\lib\win_cb\videoInputLib.a" />
 			<Add library="..\..\..\libs\fmodex\lib\win_cb\libfmodex.a" />
-			<Add library="..\..\..\libs\glew\lib\win_cb\libglew32.a" />
+			<Add library="..\..\..\libs\glew\lib\win_cb\glew32s.lib" />
 			<Add library="..\..\..\libs\glu\lib\win_cb\glu32.lib" />
 			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoNetSSL.a" />
 			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoCrypto.a" />
@@ -136,5 +133,11 @@
 			<debugger />
 			<envvars />
 		</Extensions>
+		<Unit filename="src/customCircle.cpp">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Unit filename="src/customCircle.h">
+			<Option virtualFolder="src" />
+		</Unit>
 	</Project>
 </CodeBlocks_project_file>
