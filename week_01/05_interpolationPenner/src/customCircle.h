@@ -13,24 +13,14 @@
 class customCircle {
 public:
     customCircle();
-    void setup(ofVec2f _initPos);
-    void update();
+    void setup(ofVec2f _initPos, ofVec2f _finalPos);
+    void update(float pct);
     void draw();
-    void setPenner(ofVec2f _newPos, int _totalIter);
-    
-    float easeIn (float t,float b , float c, float d);
-    float easeOut (float t,float b , float c, float d);
-    float easeInOut (float t,float b , float c, float d);
-    
-    //t == currentIteration
-    //b == startValue
-    //c == changeInValue
-    //d == totalIterations
+    void setNewPosition(ofVec2f _newPos);
     
 private:
-    int currentIter, totalIter;
-    float pct;
-    float posX, posY;
     ofVec2f initPos, finalPos, currentPos;
+    float pct;
     
 };
+

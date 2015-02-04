@@ -14,6 +14,8 @@ class customCircle {
 public:
     customCircle();
     void setup(ofVec2f _initPos, ofVec2f _finalPos);
+    
+    //This is using Quad easing functions... try using Cubic, Quart, Quint...
     void linear(float _pct);
     void easeOut(float _pct);
     void easeIn(float _pct);

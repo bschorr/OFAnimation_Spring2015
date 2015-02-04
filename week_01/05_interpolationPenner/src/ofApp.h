@@ -19,7 +19,20 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+    
+    //This is using Penner elastic equations. Check out other Penner equations!
+    float easeInElastic (float t,float b , float c, float d);
+    float easeOutElastic (float t,float b , float c, float d);
+    float easeInOutElastic (float t,float b , float c, float d);
+    
+    //t == currentIteration
+    //b == startValue
+    //c == changeInValue
+    //d == totalIterations
 	
     customCircle myCircle;
+    float pct;
+    float currIter, totalIter;
+    
     
 };

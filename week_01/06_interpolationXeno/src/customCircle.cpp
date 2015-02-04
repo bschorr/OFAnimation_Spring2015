@@ -26,5 +26,5 @@ void customCircle::update(ofVec2f _mouse) {
 void customCircle::draw() {
     
     ofCircle(currentPos, 10);
-    ofDrawBitmapString("Drag your mouse around.", 30, 30);
+    ofDrawBitmapString("Move your mouse around.", 30, 30);
 }

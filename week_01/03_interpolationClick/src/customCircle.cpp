@@ -26,10 +26,10 @@ void customCircle::update(float _pct) {
 
 void customCircle::draw() {
     
-    
     ofLine (initPos, finalPos);
     ofCircle(currentPos, 10);
     
+    //all of this is just writing to the screen
     ofDrawBitmapString("Click anywhere!", 30, 30);
     ofDrawBitmapString("Init Pos", initPos);
     ofDrawBitmapString("Final Pos", finalPos);

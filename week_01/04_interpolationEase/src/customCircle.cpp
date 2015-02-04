@@ -33,7 +33,7 @@ void customCircle::easeOut(float _pct) {
 
 void customCircle::easeIn(float _pct) {
     
-    pct = powf(_pct, 2);
+    pct = powf(_pct, 2); //== _pct * pct
     currentPos = initPos * (1 - pct) + finalPos * pct;
     
 }
@@ -43,6 +43,7 @@ void customCircle::draw() {
     ofLine (initPos, finalPos);
     ofCircle(currentPos, 10);
     
+    //all of this is just writing to the screen.
     ofDrawBitmapString("Init Pos", initPos.x, initPos.y-30);
     ofDrawBitmapString("Final Pos", finalPos.x, finalPos.y-30);
     ofDrawBitmapString("pct = " + ofToString(pct), currentPos.x, currentPos.y - 20);
