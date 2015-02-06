@@ -32,7 +32,7 @@ a) Download and try to build the web version of ofBook. Materials and instructio
 b) Listen to music and dance. Dance smoothly, as if you were trying to imitate a ballet dancer. Then dance quickly, as if you were in a club. Pay attention to your movement, where it starts, where it stops, where it picks up speed and where it slows down. Do this for at least 5 minutes.
 
 ######Code:
-*These exercises are pulled out from the 1st week of [Zach Lieberman's Algorithmic Animation class](), held at Parsons MFA D+T in 2012.*
+*These exercises are pulled out from the 1st week of [Zach Lieberman's Algorithmic Animation class](https://github.com/ofZach/algo2012), held at Parsons MFA D+T in 2012.*
 
 a) Click to change Point A and Point B
 
