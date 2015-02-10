@@ -1,4 +1,4 @@
-###Week 02 - Shapes / Randomness / Trigonometry
+###Week 02 - Shapes / Randomness
 
 The exercises Random Walker and Gaussian are inspired by Daniel Shiffman's Nature of Code.
 
