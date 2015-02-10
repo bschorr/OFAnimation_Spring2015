@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="07_sine" />
+		<Option title="08_noiseWalk" />
 		<Option makefile="makefile" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
@@ -68,6 +68,8 @@
 			<Add directory="..\..\..\libs\poco\include" />
 			<Add directory="..\..\..\libs\tess2\include" />
 			<Add directory="..\..\..\libs\cairo\include\cairo" />
+			<Add directory="../../../addons/libs" />
+			<Add directory="../../../addons/src" />
 			<Add directory="src" />
 		</Compiler>
 		<Linker>

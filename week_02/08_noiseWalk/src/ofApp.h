@@ -19,18 +19,7 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-        float ofxGaussian();
-	
-    float prevRandomY;
-    float randomY;
-    
-    float prevNoiseY;
-    float noiseY;
-    
-    float prevGaussianY;
-    float gaussianY;
-    
-    float prevX;
-    float x;
-    
+    ofVec2f pos;
+    float yOffset;
+		
 };

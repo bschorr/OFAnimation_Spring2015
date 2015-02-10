@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-               BuildableName = "07_sine.app"
-               BlueprintName = "07_sine"
-               ReferencedContainer = "container:07_sine.xcodeproj">
+               BuildableName = "08_noiseWalk.app"
+               BlueprintName = "08_noiseWalk"
+               ReferencedContainer = "container:08_noiseWalk.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "07_sine.app"
-            BlueprintName = "07_sine"
-            ReferencedContainer = "container:07_sine.xcodeproj">
+            BuildableName = "08_noiseWalk.app"
+            BlueprintName = "08_noiseWalk"
+            ReferencedContainer = "container:08_noiseWalk.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "07_sine.app"
-            BlueprintName = "07_sine"
-            ReferencedContainer = "container:07_sine.xcodeproj">
+            BuildableName = "08_noiseWalk.app"
+            BlueprintName = "08_noiseWalk"
+            ReferencedContainer = "container:08_noiseWalk.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "07_sine.app"
-            BlueprintName = "07_sine"
-            ReferencedContainer = "container:07_sine.xcodeproj">
+            BuildableName = "08_noiseWalk.app"
+            BlueprintName = "08_noiseWalk"
+            ReferencedContainer = "container:08_noiseWalk.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -4,68 +4,23 @@
 void ofApp::setup(){
     
     ofBackground(0);
-    x = 0;
-    
-    ofSetBackgroundAuto(false);
+    yOffset = 10000.0;
 
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
+    
+    pos.x = ofMap(ofNoise(ofGetElapsedTimef()), 0, 1, 0, ofGetWidth());
+    pos.y = ofMap(ofNoise(ofGetElapsedTimef() + yOffset), 0, 1, 0, ofGetHeight());
 
-    prevX = x;
-    x++;
-    
-    //random
-    prevRandomY = randomY;
-    randomY = ofRandom(30, 230);
-    
-    //gaussian
-    prevGaussianY = gaussianY;
-    float num = ofxGaussian();
-    float sd = 33;
-    float mean = ofGetHeight() / 2;
-    gaussianY = (sd * num) + mean;
-    
-    //noise
-    prevNoiseY = noiseY;
-    noiseY = ofNoise(ofGetElapsedTimef());
-    noiseY = ofMap(noiseY, 0, 1, 512, 768);
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    ofLine(prevX, prevRandomY, x, randomY);
-    ofLine(prevX, prevGaussianY, x, gaussianY);
-    ofLine(prevX, prevNoiseY, x, noiseY);
+    
+    ofCircle(pos, 10);
 
-}
-
-//code for ofxGaussian taken from: https://github.com/andyr0id/ofxGaussian
-
-bool haveNextNextGaussian = false;
-float nextNextGaussian;
-
-float ofApp::ofxGaussian() {
-    if (haveNextNextGaussian){
-        haveNextNextGaussian = false;
-        return nextNextGaussian;
-    }
-    else {
-        float v1, v2, s;
-        do {
-            v1 = 2 * ofRandomf() - 1;
-            v2 = 2 * ofRandomf() - 1;
-            s = v1 * v1 + v2 * v2;
-        }
-        while (s >= 1 || s == 0);
-        
-        float multiplier = sqrt(-2 * log(s)/s);
-        nextNextGaussian = v2 * multiplier;
-        haveNextNextGaussian = true;
-        
-        return v1 * multiplier;
-    }
 }
 
 //--------------------------------------------------------------
