@@ -135,5 +135,11 @@
 			<debugger />
 			<envvars />
 		</Extensions>
+		<Unit filename="src/arrow.cpp">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Unit filename="src/arrow.h">
+			<Option virtualFolder="src" />
+		</Unit>
 	</Project>
 </CodeBlocks_project_file>
