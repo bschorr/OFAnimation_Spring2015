@@ -23,7 +23,7 @@
 	openFrameworks/
 		addons/
 		apps/
-			[your_NID]_sims2014/
+			[YourName]_OFanimation2015/
 				w01_h01_blabla/
 				w01_h02_blabla/
 				w02_h01_blabla/ 
