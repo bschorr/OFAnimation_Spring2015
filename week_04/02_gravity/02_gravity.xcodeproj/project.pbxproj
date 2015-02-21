@@ -395,6 +395,13 @@
 				<string>E4EB6923138AFD0F00A09F29</string>
 				<key>buildSettings</key>
 				<dict>
+					<key>HEADER_SEARCH_PATHS</key>
+					<array>
+						<string>$(OF_CORE_HEADERS)</string>
+						<string>../../../addons/libs</string>
+						<string>../../../addons/src</string>
+						<string>src</string>
+					</array>
 					<key>ARCHS</key>
 					<string>$(NATIVE_ARCH)</string>
 					<key>CONFIGURATION_BUILD_DIR</key>
@@ -449,6 +456,13 @@
 				<string>E4EB6923138AFD0F00A09F29</string>
 				<key>buildSettings</key>
 				<dict>
+					<key>HEADER_SEARCH_PATHS</key>
+					<array>
+						<string>$(OF_CORE_HEADERS)</string>
+						<string>../../../addons/libs</string>
+						<string>../../../addons/src</string>
+						<string>src</string>
+					</array>
 					<key>ARCHS</key>
 					<string>$(NATIVE_ARCH)</string>
 					<key>CONFIGURATION_BUILD_DIR</key>
