@@ -67,7 +67,7 @@ We will use [Git](http://git-scm.com/) for source control and [GitHub](https://g
 You'll need to set up your own Git/Github repo to submit homework. Follow the instructions in the [homework](homework.md) file in this repo on how to do it.
 
 ##Tutoring and Support
-There will be a tutor available to help you throughout this class. This person is still TBA and will be available 3h/week in a window of time to be set.
+Nicole Messier is the tutor for this class. She's available via e-mail or in person for upt to 3 hours/week (for everyone, of course). Use the animationbycode google group to post e-mail questions and e-mail her directly to schedule office hours at messn168@newschool.edu
 
 ##Resources
 #####Code resources
