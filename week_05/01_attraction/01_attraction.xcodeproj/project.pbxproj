@@ -435,8 +435,8 @@
 					<key>HEADER_SEARCH_PATHS</key>
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
-						<string>../../../addons/libs</string>
-						<string>../../../addons/src</string>
+						<string>../../../addons/addons/libs</string>
+						<string>../../../addons/addons/src</string>
 						<string>src</string>
 					</array>
 					<key>ARCHS</key>
@@ -496,8 +496,8 @@
 					<key>HEADER_SEARCH_PATHS</key>
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
-						<string>../../../addons/libs</string>
-						<string>../../../addons/src</string>
+						<string>../../../addons/addons/libs</string>
+						<string>../../../addons/addons/src</string>
 						<string>src</string>
 					</array>
 					<key>ARCHS</key>

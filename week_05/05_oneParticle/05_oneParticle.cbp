@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="04_AttractionRepulsion" />
+		<Option title="05_oneParticle" />
 		<Option makefile="makefile" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
@@ -68,8 +68,6 @@
 			<Add directory="..\..\..\libs\poco\include" />
 			<Add directory="..\..\..\libs\tess2\include" />
 			<Add directory="..\..\..\libs\cairo\include\cairo" />
-			<Add directory="../../../addons/addons/libs" />
-			<Add directory="../../../addons/addons/src" />
 			<Add directory="src" />
 		</Compiler>
 		<Linker>
@@ -135,10 +133,10 @@
 			<debugger />
 			<envvars />
 		</Extensions>
-		<Unit filename="src/Mover.cpp">
+		<Unit filename="src/Particle.cpp">
 			<Option virtualFolder="src" />
 		</Unit>
-		<Unit filename="src/Mover.h">
+		<Unit filename="src/Particle.h">
 			<Option virtualFolder="src" />
 		</Unit>
 	</Project>

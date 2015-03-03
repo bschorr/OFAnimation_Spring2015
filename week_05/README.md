@@ -26,3 +26,8 @@ a) Create a real world particle system and make a video of it.
 
 ######Code:
 
+a) 'Cause, baby, you're a fiiiiiiiiiiirewoooooooooork
+Code fireworks. From being launched, to exploding, to dying out, in all their glory.
+
+b) Knowledge is power
+Manipulate particles using one or more of the previous concepts we learned in this class.

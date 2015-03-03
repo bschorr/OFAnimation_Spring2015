@@ -68,8 +68,8 @@
 			<Add directory="..\..\..\libs\poco\include" />
 			<Add directory="..\..\..\libs\tess2\include" />
 			<Add directory="..\..\..\libs\cairo\include\cairo" />
-			<Add directory="../../../addons/libs" />
-			<Add directory="../../../addons/src" />
+			<Add directory="../../../addons/addons/libs" />
+			<Add directory="../../../addons/addons/src" />
 			<Add directory="src" />
 		</Compiler>
 		<Linker>

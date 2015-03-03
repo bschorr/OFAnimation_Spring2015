@@ -9,7 +9,7 @@
 		<string>46</string>
 		<key>objects</key>
 		<dict>
-			<key>0CDCA10C828334B3FBC3337C</key>
+			<key>EF9E0E27D27B30CBC6BE319D</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -18,20 +18,20 @@
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>name</key>
-				<string>Mover.h</string>
+				<string>particleSystem.h</string>
 				<key>path</key>
-				<string>src/Mover.h</string>
+				<string>src/particleSystem.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>94D108CCF1F3A8F725647533</key>
+			<key>92B00594144EFF45FBE194AE</key>
 			<dict>
 				<key>fileRef</key>
-				<string>2769A0145A11A82BA767B5C6</string>
+				<string>19245CCA919595E2FAF7A796</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>2769A0145A11A82BA767B5C6</key>
+			<key>19245CCA919595E2FAF7A796</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -40,9 +40,46 @@
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>name</key>
-				<string>Mover.cpp</string>
+				<string>particleSystem.cpp</string>
 				<key>path</key>
-				<string>src/Mover.cpp</string>
+				<string>src/particleSystem.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>7B0055EEB8AD49D04B3F5D4D</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>Particle.h</string>
+				<key>path</key>
+				<string>src/Particle.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>C6792CBAAA54D5A713D25ADF</key>
+			<dict>
+				<key>fileRef</key>
+				<string>E9AA5FD1EDF04CD1F5FB1686</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>E9AA5FD1EDF04CD1F5FB1686</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>Particle.cpp</string>
+				<key>path</key>
+				<string>src/Particle.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -435,8 +472,6 @@
 					<key>HEADER_SEARCH_PATHS</key>
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
-						<string>../../../addons/addons/libs</string>
-						<string>../../../addons/addons/src</string>
 						<string>src</string>
 					</array>
 					<key>ARCHS</key>
@@ -496,8 +531,6 @@
 					<key>HEADER_SEARCH_PATHS</key>
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
-						<string>../../../addons/addons/libs</string>
-						<string>../../../addons/addons/src</string>
 						<string>src</string>
 					</array>
 					<key>ARCHS</key>
@@ -558,7 +591,8 @@
 				<array>
 					<string>E4B69E200A3A1BDC003C02F2</string>
 					<string>E4B69E210A3A1BDC003C02F2</string>
-					<string>94D108CCF1F3A8F725647533</string>
+					<string>C6792CBAAA54D5A713D25ADF</string>
+					<string>92B00594144EFF45FBE194AE</string>
 				</array>
 				<key>isa</key>
 				<string>PBXSourcesBuildPhase</string>
@@ -613,7 +647,7 @@
 				<key>isa</key>
 				<string>PBXNativeTarget</string>
 				<key>name</key>
-				<string>04_AttractionRepulsion</string>
+				<string>07_particleSystems</string>
 				<key>productName</key>
 				<string>myOFApp</string>
 				<key>productReference</key>
@@ -630,7 +664,7 @@
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>path</key>
-				<string>04_AttractionRepulsionDebug.app</string>
+				<string>07_particleSystemsDebug.app</string>
 				<key>sourceTree</key>
 				<string>BUILT_PRODUCTS_DIR</string>
 			</dict>
@@ -861,8 +895,10 @@
 					<string>E4B69E1D0A3A1BDC003C02F2</string>
 					<string>E4B69E1E0A3A1BDC003C02F2</string>
 					<string>E4B69E1F0A3A1BDC003C02F2</string>
-					<string>2769A0145A11A82BA767B5C6</string>
-					<string>0CDCA10C828334B3FBC3337C</string>
+					<string>E9AA5FD1EDF04CD1F5FB1686</string>
+					<string>7B0055EEB8AD49D04B3F5D4D</string>
+					<string>19245CCA919595E2FAF7A796</string>
+					<string>EF9E0E27D27B30CBC6BE319D</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
