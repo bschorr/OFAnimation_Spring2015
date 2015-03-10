@@ -12,7 +12,8 @@ Particle::Particle(ofVec2f _pos) {
     pos.set(_pos);
     vel.x = ofRandom(-2, 2);
     vel.y = ofRandom(-1, -5);
-    lifespan = 255;
+    lifespan = ofRandom(155, 255);
+    size = ofRandom(5, 20);
 }
 
 void Particle::setup() {
@@ -41,7 +42,7 @@ void Particle::update() {
 
 void Particle::draw(ofColor _color) {
     ofSetColor(_color, lifespan);
-    ofCircle(pos, 5);
+    ofCircle(pos, size);
 }
 
 

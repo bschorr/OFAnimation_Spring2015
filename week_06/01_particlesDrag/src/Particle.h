@@ -25,6 +25,6 @@ public:
     void draw(ofColor _color);
     
     ofVec2f pos, vel, acc;
-    float lifespan;
+    float lifespan, size;
     
 };

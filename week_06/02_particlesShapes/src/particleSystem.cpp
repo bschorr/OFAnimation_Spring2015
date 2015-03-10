@@ -18,7 +18,7 @@ void particleSystem::update(ofVec2f _force){
     
     for (int i = 0; i < particleList.size(); i++) {
         particleList[i].resetForces();
-        particleList[i].applyDampingForce(0.2);
+        particleList[i].applyDampingForce(0.02);
         particleList[i].update();
     }
     

@@ -3,7 +3,8 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     
-    ofBackground(0);
+    start.set(255, 100, 0);
+    end.set(0, 255, 255);
     
     ofNoFill();
     
@@ -55,6 +56,8 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    
+    ofBackgroundGradient(start, end, OF_GRADIENT_LINEAR);
     
     ofBeginShape();
     

@@ -4,24 +4,26 @@
 void ofApp::setup(){
     ofBackground(255);
     gravity.set(0, 0.2);
-    
-    mouseClicked = false;
+    color.set(0, 100, 255);
     
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
     
-    for (int i = 0; i < systems.size(); i++) {
-        systems[i].update(gravity);
+    for (int i = 0; i < particleList.size(); i++) {
+        particleList[i].resetForces();
+        particleList[i].update();
     }
 
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    for (int i = 0; i < systems.size(); i++) {
-        systems[i].draw();
+    ofSetColor(color);
+    
+    for (int i = 0; i < particleList.size(); i++) {
+        particleList[i].draw(color);
     }
 
 }
@@ -44,27 +46,18 @@ void ofApp::mouseMoved(int x, int y ){
 //--------------------------------------------------------------
 void ofApp::mouseDragged(int x, int y, int button){
     
-    int index = systems.size()-1;
-    systems[index].mouseDragged(x, y);
+    Particle p(ofVec2f(x, y));
+    particleList.push_back(p);
 
 }
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-    
-    if(!mouseClicked) {
-        particleSystem system(ofVec2f(x, y));
-        systems.push_back(system);
-    }
-    
-    mouseClicked = true;
 
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
-    
-    mouseClicked = false;
 
 }
 

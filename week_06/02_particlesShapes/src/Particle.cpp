@@ -11,8 +11,6 @@
 Particle::Particle(ofVec2f _pos, ofVec2f _vel) {
     pos.set(_pos);
     vel.set(_vel);
-    //vel.x = ofRandom(-2, 2);
-    //vel.y = ofRandom(-1, -5);
 }
 
 void Particle::setup() {
@@ -28,7 +26,7 @@ void Particle::applyForce(ofVec2f force) {
 }
 
 void Particle::applyDampingForce(float damping) {
-    acc -= vel.getNormalized() * damping;
+    acc -= vel * damping;
 }
 
 void Particle::update() {

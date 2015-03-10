@@ -21,5 +21,7 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     
     vector <Mover> moverList;
+    ofColor start, end;
+
     bool bElasticOn;
 };

@@ -23,7 +23,4 @@ public:
     vector<Particle> particleList;
     ofVec2f pos;
     
-    int counter;
-    
-    
 };

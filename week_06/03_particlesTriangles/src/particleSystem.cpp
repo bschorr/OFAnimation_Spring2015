@@ -10,7 +10,6 @@
 
 particleSystem::particleSystem(ofVec2f _pos){
     pos = _pos;
-    counter = 3;
 }
 
 //--------------------------------------------------------------
@@ -42,14 +41,17 @@ void particleSystem::draw(){
 
 void particleSystem::mouseDragged(float x, float y) {
     ofVec2f vel;
-    vel.x = x - ofGetPreviousMouseX();
-    vel.y = y - ofGetPreviousMouseY();
+    vel.x = ofRandom(-2,2);
+    vel.y = ofRandom(-2,2);
     
-    if(counter > 3) {
-    Particle p(ofVec2f(x, y), vel);
+    ofVec2f mouse;
+    mouse.set(x, y);
+    
+    ofVec2f offset;
+    offset.x = ofRandom(-30, 30);
+    offset.y = ofRandom(-30, 30);
+    
+    Particle p(mouse+offset, vel);
     particleList.push_back(p);
-        counter = 0;
-    }
     
-    counter ++;
 }
