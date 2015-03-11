@@ -25,6 +25,10 @@ void ofApp::draw(){
     for (int i = 0; i < systems.size(); i++) {
         systems[i].draw();
     }
+    
+    ofSetColor(255, 0, 0);
+    string debug = "Drag your mouse around.";
+    ofDrawBitmapString(debug, 20, 20);
 
 }
 

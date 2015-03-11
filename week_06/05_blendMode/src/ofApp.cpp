@@ -22,6 +22,11 @@ void ofApp::draw(){
     for (int i = 0; i < systems.size(); i++) {
         systems[i].draw();
     }
+    
+    ofSetColor(255, 0, 0);
+    stringstream debug;
+    debug << "Click to add a comet.";
+    ofDrawBitmapString(debug.str(), 20, 20);
 
 }
 

@@ -58,7 +58,8 @@ void ofApp::update(){
 void ofApp::draw(){
     
     ofBackgroundGradient(start, end, OF_GRADIENT_LINEAR);
-    
+
+    ofSetColor(255);
     ofBeginShape();
     
     for (int i = 0; i < moverList.size(); i++) {
@@ -66,6 +67,12 @@ void ofApp::draw(){
     }
     
     ofEndShape();
+    
+    ofSetColor(0, 0, 255);
+    stringstream debug;
+    debug << "Move your mouse around." << endl
+    << "Hit the spacebar to toggle elastic force";
+    ofDrawBitmapString(debug.str(), 20, 20);
 }
 
 //--------------------------------------------------------------
