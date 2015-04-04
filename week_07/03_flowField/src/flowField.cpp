@@ -75,7 +75,7 @@ void flowField::draw() {
             
             //converting the flow X and Y values to position in pixels. This is the tip of the line.
             float x1 = x0 + (field[index].x * 5);
-            float y1 = x0 + (field[index].y * 5);
+            float y1 = y0 + (field[index].y * 5);
             
             //draw a line
             ofLine (x0, y0, x1, y1);
