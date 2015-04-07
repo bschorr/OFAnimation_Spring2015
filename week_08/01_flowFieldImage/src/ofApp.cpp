@@ -13,7 +13,7 @@ void ofApp::setup(){
     //flowField.setNoise();
     flowField.setImage(morrison);
     
-    for (int i = 0; i < 10000; i++) {
+    for (int i = 0; i < 50000; i++) {
         Particle myParticle;
         myParticle.setup();
         particles.push_back(myParticle);
@@ -50,7 +50,7 @@ void ofApp::draw(){
     
     if (bDrawField) flowField.draw();
     
-    ofSetColor(0, 5);
+    ofSetColor(0, 3);
     for (int i = 0; i < particles.size(); i++){
         particles[i].draw();
     }
