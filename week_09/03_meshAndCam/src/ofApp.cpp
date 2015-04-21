@@ -9,14 +9,23 @@ void ofApp::setup(){
     height = 50;
     res = 10;
     
+    mfadt.loadImage("mfadt.png");
+
     bUsePanCam = false;
     
     //add vertices
     for (int y = -height/2; y < height/2; y++){
-        for (int x = -width/2; x< width/2; x++){
+        for (int x = -width/2; x < width/2; x++){
             mesh.addVertex(ofPoint(x*res,y*res,0));
         }
     }
+    
+    for (int y = 0; y < height; y++){
+        for (int x = 0; x < width; x++){
+            mesh.addTexCoord(ofVec2f(x, height-y)*res);
+        }
+    }
+    
     
     //add indices
     for (int y = 0; y<height-1; y++){
@@ -28,6 +37,7 @@ void ofApp::setup(){
             mesh.addIndex((x+1)+y*width);			// 1
             mesh.addIndex((x+1)+(y+1)*width);		// 11
             mesh.addIndex(x+(y+1)*width);			// 10
+            
         }
     }
     
@@ -70,7 +80,10 @@ void ofApp::draw(){
     } else {
         easyCam.begin();
     }
+
+    mfadt.bind();
         mesh.drawWireframe();
+    mfadt.unbind();
     
     if (bUsePanCam) {
         panCam.end();

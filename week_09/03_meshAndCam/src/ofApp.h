@@ -23,6 +23,8 @@ class ofApp : public ofBaseApp{
     ofEasyCam easyCam;
     ofCamera panCam;
     
+    ofImage mfadt;
+    
     int width, height, res;
     
     bool bUsePanCam;
