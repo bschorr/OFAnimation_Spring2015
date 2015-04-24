@@ -1,10 +1,6 @@
-//This example is mostly a port from Daniel Shiffman's book Nature of Code example 6.9 - Flocking.
-
 #pragma once
 
 #include "ofMain.h"
-#include "Flock.h"
-#include "Boid.h"
 
 class ofApp : public ofBaseApp{
 
@@ -23,6 +19,13 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-    Flock flock;
+    bool bDrawAxis;
+    bool bDrawGrid;
+    bool bFill;
+    bool bMaterial;
+    bool bDrawLight;
+    
+    ofLight light;
+    ofMaterial material;
 		
 };

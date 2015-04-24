@@ -1,3 +1,5 @@
+//This example is heavily inspired by Zach Lieberman's example for Algo 2012 at Parsons: https://github.com/ofZach/algo2012/tree/master/week6/1_particle_particle
+
 #pragma once
 
 #include "ofMain.h"
