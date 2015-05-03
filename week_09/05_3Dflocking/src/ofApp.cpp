@@ -12,15 +12,14 @@ void ofApp::setup(){
         flock.addBoid(b);
     }
     
-    light.setDirectional();
-    light.setPosition(1000, 1000, -1000);
-    light.lookAt(ofVec3f(0, 0, 0));
+    light.setPointLight();
     light.setDiffuseColor(ofFloatColor(1.0, 1.0, 1.0));
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
     
+    light.setPosition(flock.target);
     flock.update();
 
 }

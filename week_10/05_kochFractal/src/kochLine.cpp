@@ -4,6 +4,10 @@
 //
 //  Created by Bernardo Schorr on 4/26/15.
 //
+//  Based of:
+//  Koch Curve
+//  Daniel Shiffman <http://www.shiffman.net>
+//  Nature of Code, Chapter 8
 //
 
 #include "kochLine.h"
@@ -23,12 +27,6 @@ ofVec2f kochLine::start() {
     return start;
 }
 
-ofVec2f kochLine::end() {
-    ofVec2f end = b;
-    return end;
-}
-
-// This is easy, just 1/3 of the way
 ofVec2f kochLine::kochLeft() {
     ofVec2f v = b - a;
     v /= 3;
@@ -36,22 +34,18 @@ ofVec2f kochLine::kochLeft() {
     return v;
 }
 
-// More complicated, have to use a little trig to figure out where this PVector is!
 ofVec2f kochLine::kochMiddle() {
     ofVec2f v = b - a;
     v /= 3;
     
-    ofVec2f p = a;
-    p += v;
+    v.rotate(-60);
     
-    rotate(v, -ofDegToRad(60));
-    p += v;
+    ofVec2f p = kochLeft();
+    v += p;
     
-    return p;
+    return v;
 }
 
-
-// Easy, just 2/3 of the way
 ofVec2f kochLine::kochRight() {
     ofVec2f v = a - b;
     v /= 3;
@@ -59,9 +53,7 @@ ofVec2f kochLine::kochRight() {
     return v;
 }
 
-void kochLine::rotate(ofVec2f &v, float theta) {
-    float xTemp = v.x;
-    // Might need to check for rounding errors like with angleBetween function?
-    v.x = v.x*cos(theta) - v.y*sin(theta);
-    v.y = xTemp*sin(theta) + v.y*cos(theta);
+ofVec2f kochLine::end() {
+    ofVec2f end = b;
+    return end;
 }

@@ -18,7 +18,7 @@ public:
     void nextLevel();
     void restart();
     int getCount();
-    void render();
+    void draw();
     vector<kochLine> iterate (vector<kochLine> before);
     
     ofVec2f start, end;
