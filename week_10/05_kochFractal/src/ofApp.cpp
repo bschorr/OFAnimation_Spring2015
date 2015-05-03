@@ -3,40 +3,28 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     
-    ofSetVerticalSync(true);
     ofBackground(0);
+    ofEnableSmoothing();
     
-    // Add an initial set of boids into the system
-    for (int i = 0; i < 200; i++) {
-        Boid b(0, 0, 0);
-        flock.addBoid(b);
-    }
-    
-    light.setPointLight();
-    light.setDiffuseColor(ofFloatColor(1.0, 1.0, 1.0));
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
     
-    light.setPosition(flock.target);
-    flock.update();
+    if (k.getCount() > 6) {
+        k.restart();
+    }
 
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
     
-    ofEnableDepthTest();
-    ofSetColor(255, 150);
+    k.draw();
     
-    ofEnableLighting();
+    string debug = "Fractal has " + ofToString(k.getCount()) + " iteration(s).";
     
-    light.enable();
-    cam.begin();
-    flock.draw();
-    cam.end();
-    ofDisableLighting();
+    ofDrawBitmapString(debug, 20, 20);
 
 }
 
@@ -47,6 +35,7 @@ void ofApp::keyPressed(int key){
 
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key){
+    
 
 }
 
@@ -67,7 +56,7 @@ void ofApp::mousePressed(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
-
+    k.nextLevel();
 }
 
 //--------------------------------------------------------------

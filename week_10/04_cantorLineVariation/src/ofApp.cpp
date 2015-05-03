@@ -3,41 +3,37 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     
-    ofSetVerticalSync(true);
     ofBackground(0);
-    
-    // Add an initial set of boids into the system
-    for (int i = 0; i < 200; i++) {
-        Boid b(0, 0, 0);
-        flock.addBoid(b);
-    }
-    
-    light.setPointLight();
-    light.setDiffuseColor(ofFloatColor(1.0, 1.0, 1.0));
+
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    
-    light.setPosition(flock.target);
-    flock.update();
 
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
     
-    ofEnableDepthTest();
-    ofSetColor(255, 150);
-    
-    ofEnableLighting();
-    
-    light.enable();
-    cam.begin();
-    flock.draw();
-    cam.end();
-    ofDisableLighting();
+    drawLines(300,ofGetHeight()/2, ofGetWidth()-300, ofGetHeight()/2);
 
+}
+
+//--------------------------------------------------------------
+void ofApp::drawLines(float x1, float y1, float x2, float y2) {
+    
+    ofLine(x1,y1,x2,y2);
+    
+    float dx = x2-x1;
+    float dy = y2-y1;
+    
+    if (dx == 0 && dy > 4) {
+        drawLines(x1-dy/3,y1,x1+dy/3,y1);
+        drawLines(x1-dy/3,y2,x1+dy/3,y2);
+    } else if (dy == 0 && dx > 4) {
+        drawLines(x1,y1-dx/3,x1,y1+dx/3);
+        drawLines(x2,y1-dx/3,x2,y1+dx/3);
+    }
 }
 
 //--------------------------------------------------------------

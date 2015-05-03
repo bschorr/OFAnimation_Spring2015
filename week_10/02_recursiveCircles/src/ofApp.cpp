@@ -3,41 +3,33 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     
-    ofSetVerticalSync(true);
     ofBackground(0);
-    
-    // Add an initial set of boids into the system
-    for (int i = 0; i < 200; i++) {
-        Boid b(0, 0, 0);
-        flock.addBoid(b);
-    }
-    
-    light.setPointLight();
-    light.setDiffuseColor(ofFloatColor(1.0, 1.0, 1.0));
+    ofEnableSmoothing();
+    ofSetCircleResolution(100);
+
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    
-    light.setPosition(flock.target);
-    flock.update();
-
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
     
-    ofEnableDepthTest();
-    ofSetColor(255, 150);
-    
-    ofEnableLighting();
-    
-    light.enable();
-    cam.begin();
-    flock.draw();
-    cam.end();
-    ofDisableLighting();
+    ofNoFill();
+    drawCircle(ofGetWidth()/2, ofGetHeight()/2, 360);
 
+}
+
+//--------------------------------------------------------------
+void ofApp::drawCircle(float x, float y, float radius) {
+    ofCircle(x, y, radius);
+    if(radius >= 45) {
+        drawCircle(x + radius/2, y, radius/2);
+        drawCircle(x - radius/2, y, radius/2);
+        //drawCircle(x, y + radius/2, radius/2);
+        //drawCircle(x, y - radius/2, radius/2);
+    }
 }
 
 //--------------------------------------------------------------

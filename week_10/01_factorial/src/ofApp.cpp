@@ -3,46 +3,50 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     
-    ofSetVerticalSync(true);
     ofBackground(0);
     
-    // Add an initial set of boids into the system
-    for (int i = 0; i < 200; i++) {
-        Boid b(0, 0, 0);
-        flock.addBoid(b);
-    }
-    
-    light.setPointLight();
-    light.setDiffuseColor(ofFloatColor(1.0, 1.0, 1.0));
+    keypress = 0;
+    result = 0;
+
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    
-    light.setPosition(flock.target);
-    flock.update();
 
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
     
-    ofEnableDepthTest();
-    ofSetColor(255, 150);
+    stringstream debug;
     
-    ofEnableLighting();
+    debug << "You pressed: " + ofToString(keypress) << endl <<
+    "Factorial result for "+ ofToString(keypress) + " is: " + ofToString(result);
     
-    light.enable();
-    cam.begin();
-    flock.draw();
-    cam.end();
-    ofDisableLighting();
+    ofDrawBitmapString(debug.str(), 20, 20);
 
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
+    
+    //In ASCII keys 0-9 are represented 48-57. This is a "poor man's" ASCII converter.
+    int num = key - 48;
+    
+    if (num >= 0 && num <= 9) {
+        keypress = num;
+        result = factorial(num);
+    }
 
+}
+
+//--------------------------------------------------------------
+int ofApp::factorial (int n) {
+    if (n == 1) {
+        return 1;
+    } else {
+        return n * factorial(n-1);
+    }
 }
 
 //--------------------------------------------------------------

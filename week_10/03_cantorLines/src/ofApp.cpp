@@ -2,42 +2,39 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    
-    ofSetVerticalSync(true);
     ofBackground(0);
     
-    // Add an initial set of boids into the system
-    for (int i = 0; i < 200; i++) {
-        Boid b(0, 0, 0);
-        flock.addBoid(b);
-    }
-    
-    light.setPointLight();
-    light.setDiffuseColor(ofFloatColor(1.0, 1.0, 1.0));
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    
-    light.setPosition(flock.target);
-    flock.update();
 
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
     
-    ofEnableDepthTest();
-    ofSetColor(255, 150);
-    
-    ofEnableLighting();
-    
-    light.enable();
-    cam.begin();
-    flock.draw();
-    cam.end();
-    ofDisableLighting();
+    cantor(24, 24, 976);
 
+}
+
+//--------------------------------------------------------------
+void ofApp::cantor(float x, float y, float len) {
+    
+    float h = 30;
+    
+    // recursive exit condition
+    if (len >= 1) {
+        
+        ofRect(x, y, len, h/3);
+        
+        // Go down to next y position
+        y += h;
+        
+        // Draw 2 more lines 1/3rd the length (without the middle section)
+        cantor(x, y, len/3);
+        cantor(x+len*2/3, y, len/3);
+    }
 }
 
 //--------------------------------------------------------------
